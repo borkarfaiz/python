@@ -1,0 +1,14 @@
+from struct import *
+
+#store as bytes data
+packed_data = pack('iif', 6, 19, 4.7)
+print(packed_data)
+
+print(calcsize('i'))
+print(calcsize('f'))
+print(calcsize('iif'))
+
+#to get bytes data back to normal 
+
+original_data = unpack('iif', packed_data)
+print(original_data)
